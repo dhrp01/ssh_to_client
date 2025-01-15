@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: ssh-shell-client
+Version: 0.1.0
+Summary: A library to establish SSH connections and execute commands interactively
+Home-page: https://github.com/dhrp01/ssh-shell-client
+Author: <YOUR NAME>
+Author-email: <YOUR EMAIL@email.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: paramiko>=3.5.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Create a python package
+This repo includes steps need to create an installable python package. Source includes a simple ssh connection script. Unit test has been added to verify the code remain functional.
+
+## Steps
+1. Ensure the repo structure matches as below
+repo/
+|--src/
+|----package name
+|------__init__.py
+|------source code
+|--tests/
+|----__init__.py
+|----test file
+|--setup.py
+|--pyproject.toml
+|--README.md
+|--LICENSE
+|--requirements.txt
+
+2. Create `setup.py` and add the given code. Make changes as need
+
+3. Create `pyproject.toml` and the given lines
+
+4. Add `requirements.txt`
+
+5. Add `README.md`
+
+6. Build package using below commands
+    ```
+    pip install setuptools wheel
+    python setup.py sdist bdist_wheel
+    ```
+    This will create .tar.gz and .whl files in the dist/ directory.
+
+7. Install package
+    ```
+    pip install ./dist/ssh_shell_client-0.1.0-py3-none-any.whl
+    ```
+
+### Running the SSH connection code
+python code to establish ssh connection to a client using paramiko
+ssh_shell.py will establish ssh connection to your client. 
+Command: `python ssh_shell.py -ht <hostname_of_your_machine> -u <username_of your_machine> -o <password_of_username> -pt <port_number_for_machine>` 

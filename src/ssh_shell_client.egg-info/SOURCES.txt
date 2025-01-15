@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+src/ssh_shell/__init__.py
+src/ssh_shell/ssh_shell.py
+src/ssh_shell_client.egg-info/PKG-INFO
+src/ssh_shell_client.egg-info/SOURCES.txt
+src/ssh_shell_client.egg-info/dependency_links.txt
+src/ssh_shell_client.egg-info/requires.txt
+src/ssh_shell_client.egg-info/top_level.txt
+test/test_ssh_shell.py
