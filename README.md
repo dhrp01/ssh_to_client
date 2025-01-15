@@ -3,21 +3,23 @@ This repo includes steps need to create an installable python package. Source in
 
 ## Steps
 1. Ensure the repo structure matches as below
-                repo/
-                |--src/
-                |----package name
-                |------__init__.py
-                |------source code
-                |--tests/
-                |----__init__.py
-                |----test file
-                |--setup.py
-                |--pyproject.toml
-                |--README.md
-                |--LICENSE
-                |--requirements.txt
+   ```
+    repo/
+    |--src/
+    |----package name
+    |------__init__.py
+    |------source code
+    |--tests/
+    |----__init__.py
+    |----test file
+    |--setup.py
+    |--pyproject.toml
+    |--README.md
+    |--LICENSE
+    |--requirements.txt
+   ```
 
-2. Create `src\<package name>`. This marks the `<package name>` directory as a Python package. Create test files inside `tests` directory to ensure that the core code (`src\<package name>`) remains functional even if there are any changes made down the line.
+3. Create `src\<package name>`. This marks the `<package name>` directory as a Python package. Create test files inside `tests` directory to ensure that the core code (`src\<package name>`) remains functional even if there are any changes made down the line.
 
 2. Create `setup.py` and add the given code. This file defines metadata and configuration for your Python package. It specifies the package name, version, description, author details, dependencies, and more. It will be used by tools like pip and setuptools to build and install your package. Make changes as need. For further explaination visit python [documentation](https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/#setup-args)
 
